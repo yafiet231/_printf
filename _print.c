@@ -19,7 +19,8 @@ int _print(const char *ft, int *index, va_list list, char buff[],
 		{'c', print_char}, {'s', display_string}, {'%', display_percent},
 		{'i', print_int}, {'d', print_int}, {'b', display_binary},
 		{'u', display_unsigned}, {'o', display_octal}, {'x', display_hexadecimal},
-		{'X', display_hexa_upper}, {'p', print_pointer}, {'S', display_non_printable},
+		{'X', display_hexa_upper}, {'p', print_pointer},
+		{'S', display_non_printable},
 		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
 	};
 	for (i = 0; ft_types[i].ft != '\0'; i++)

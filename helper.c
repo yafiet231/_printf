@@ -111,7 +111,7 @@ int print_int(va_list types, char buff[],
 	long int n = va_arg(types, long int);
 	unsigned long int num;
 
-	n =change_size_number(n, size);
+	n = change_size_number(n, size);
 
 	if (n == 0)
 		buff[i--] = '0';
